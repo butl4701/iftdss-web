@@ -37,69 +37,102 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="http://www.google.com" class="pull-left"><img src="assets/iftdss-banner-small.png"></a> <!--this image should be resized as it spills out of the navbar -->
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="contact.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="whats-new.html">What's New?</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html" class="pull-left"><img src="assets/iftdss-banner-big.png"></a> <!--this image should be resized as it spills out of the navbar -->
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="whats-new.html">What's New</a>
+                  </li>
+                  <li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Support <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="knowledge-center.html>Knowledge Center</a>
+                                <a href="#">Development</a>
                             </li>
                             <li>
-                                <a href="http://knowledge.iftdss.wfmrdax.com.s3-website-us-east-1.amazonaws.com/content/home.htm">Basic Steps</a>
-                            </li>
-                            <li>
-                                <a href="http://knowledge.iftdss.wfmrdax.com.s3-website-us-east-1.amazonaws.com/content/home.htm">Tutorials</a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UC-bv5ClT25Xd6S7bFHOc_Wg">Videos</a>
-                            </li>
-                            <li>
-                                <a href="webinars.html">Webinars</a>
-                            </li>
-                            <li>
-                                <a href="https://iftdsshelp.freshdesk.com/support/discussions/forums/22000059274">Q&A Forum</a>
-                            </li>
-                            <li>
-                                <a href="https://iftdsshelp.freshdesk.com/support/discussions/forums/22000059283">Ideas Exchange</a>
-                            </li>
-                            <li>
-                                <a href="support.html">Request Tech. Support</a>
+                                <a href="history.html">History</a>
                             </li>
                             </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Support <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li>
+                              <a href="knowledge-center.html">Help Center</a>
+                          </li>
+                          <li>
+                              <a href="https://www.youtube.com/channel/UC-bv5ClT25Xd6S7bFHOc_Wg" target="_blank">Videos</a>
+                          </li>
+                          <li>
+                              <a href="webinars.html">Webinars/Trainings</a>
+                          </li>
+                          <li>
+                              <a href="https://iftdsshelp.freshdesk.com/support/discussions/forums/22000059274" target="_blank">Q &amp A Forum</a>
+                          </li>
+                          <li>
+                              <a href="support.html">Request Tech. Support</a>
+                          </li>
+                          </ul>
+                        </form>
+<!-- Login Dropdown -->
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
+      <ul id="login-dp" class="dropdown-menu">
+          <li>
+               <div class="row">
+                      <div class="col-md-12">
+                          Login via
+                          <div class="social-buttons">
+                              <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                              <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                          </div>
+                          or
+                           <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                  <div class="form-group">
+                                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                  </div>
+                                  <div class="form-group">
+                                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                       <div class="help-block text-right"><a href="">Forgot your password ?</a></div>
+                                  </div>
+                                  <div class="form-group">
+                                       <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                  </div>
+                                  <div class="checkbox">
+                                       <label>
+                                       <input type="checkbox"> keep me logged-in
+                                       </label>
+                                  </div>
+                           </form>
+                      </div>
+                      <div class="bottom text-center"><a href="#"><b>Create An Account</b></a>
+                      </div>
+               </div>
+          </li>
+      </ul>
+  </li>
+</ul>
+</div><!-- /.navbar-collapse -->
+      <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
 
     <!-- Page Content -->
     <div class="container">
